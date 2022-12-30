@@ -259,17 +259,21 @@ footer h2{
 }
 
 @media (min-width:700px) and (max-width:1000px){
+    
+    .disp-none {
+        display: block
+    }
+
+    /*BOTTOM SECTION*/
     .bottom-section .right-column{
         display: flex;
         gap: 1rem;
     }
 
+    /*NAVIGATION MENU*/
+
     .burger-menu {
         display: none;
-    }
-
-    .disp-none {
-        display: block
     }
 
     nav {
@@ -282,11 +286,12 @@ footer h2{
     .singup-button {
         width: 10%;
         margin: 0;
-        padding: 0.5rem 3rem;
+        padding: 0.5rem 3rem 0.5rem 2rem;
+        
     }
 
     .singup-button a {
-        width: auto;
+        margin: auto;
         white-space: nowrap;
     }
 
