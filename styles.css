@@ -244,6 +244,7 @@ footer h2{
     font-size: 2rem;
     color: var(--white);
     text-align: center;
+    text-shadow: 1px 1px 10px var(--beige);
 }
 
 .footer-bottom-section .about h3,
