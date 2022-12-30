@@ -257,3 +257,62 @@ footer h2{
 .footer-bottom-section__lists a li{
     margin-top: 1rem;
 }
+
+@media (min-width:700px) and (max-width:1000px){
+    .bottom-section .right-column{
+        display: flex;
+        gap: 1rem;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .disp-none {
+        display: block
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .singup-button {
+        width: 10%;
+        margin: 0;
+        padding: 0.5rem 3rem;
+    }
+
+    .singup-button a {
+        width: auto;
+        white-space: nowrap;
+    }
+
+    .navigation {
+        margin: 0;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+
+    .navigation-list {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+
+        margin: 0;
+       
+    }
+
+    .logo-link {
+        left: 0%;
+        transform: translateX(0);
+    }
+
+    .navigation-list__items + .navigation-list__items {
+        margin-top: 0;
+        margin-left: 1rem;
+    }
+}
