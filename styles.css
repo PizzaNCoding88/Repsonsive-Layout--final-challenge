@@ -99,6 +99,8 @@ nav, .container{
     margin: 0 auto;
 
     border-radius: 2rem;
+
+    box-shadow: 2px 2px 10px 2px var(--beige);
 }
 
 /*TOP SECTION*/
@@ -142,12 +144,15 @@ mark{
 
     background-color: var(--beige);
     color: var(--white);
+    font-size: 1rem;
     font-weight: bolder;
+    font-family: var(--oswald);
     border: none;
 
     padding: 0.5rem 1rem;
     border-radius: 1rem;
     
+    box-shadow: 2px 2px 10px 2px var(--beige);
 }
 
 /*MIDDLE SECTION*/
@@ -200,14 +205,18 @@ mark{
 .right-column__top, 
 .right-column__center, 
 .right-column__bottom {
+    max-width: 50%;
     background-color: var(--black);
 
     padding: 1rem 1rem;
-    margin: 1rem 0;
+    margin: 1rem auto;
 
     color: var(--white);
 
     text-align: center;
+
+    box-shadow: 2px 2px 10px 3px var(--semi-black);
+    border-radius: .2rem;
 }
 
 
@@ -243,12 +252,14 @@ footer h2{
     text-align: center;
 
     font-weight: 1.8rem;
+    font-family: var(--oswald);
 }
 
 .footer-bottom-section .about p,
 .footer-bottom-section__lists a{
     color: var(--gray);
-    text-align: center;
+    text-align: center;  
+    font-family: var(--oswald);
 
     list-style: none;
     text-decoration: none;
@@ -257,6 +268,8 @@ footer h2{
 .footer-bottom-section__lists a li{
     margin-top: 1rem;
 }
+
+/*MEDIA 700px - 1000px*/
 
 @media (min-width:700px) and (max-width:1000px){
     
@@ -320,4 +333,163 @@ footer h2{
         margin-top: 0;
         margin-left: 1rem;
     }
+}
+
+/*MEDIA > 1000px*/
+
+@media (min-width: 1000px) {
+
+    /*GENERAL*/
+
+    .container{
+        max-width: 1200px;
+        width: 90%;
+    }
+
+    /*NAVIGATION*/
+
+    .burger-menu {
+        display: none;
+    }
+
+    nav {
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .singup-button {
+        width: 10%;
+        margin: 0;
+        padding: 0.5rem 3rem 0.5rem 2rem;
+        
+    }
+
+    .singup-button a {
+        margin: auto;
+        white-space: nowrap;
+    }
+
+    .navigation {
+        margin: 0;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+
+    .navigation-list {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+
+        margin: 0;
+       
+    }
+
+    .logo-link {
+        left: 0%;
+        transform: translateX(0);
+    }
+
+    .navigation-list__items + .navigation-list__items {
+        margin-top: 0;
+        margin-left: 1rem;
+    }
+
+    /*TOP SECTION*/
+
+    .top-section .container{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .top-section .container h1,
+    .container-left-side p{
+        text-align: left;
+    }
+
+    .top-section .container h1 {
+        font-size: 5.5rem;
+    }
+
+    .container-left-side button {
+        left: 0;
+        transform: translateX(0);
+        padding: 1rem 2rem;
+        border-radius: 2rem;
+    }
+
+    /*MIDDLE SECTION*/
+
+    .middle-section .container{
+        display: flex;
+        gap: 4rem;
+        justify-content: center;
+    }
+
+    .middle-section__left-part,
+    .middle-section__central-part,
+    .middle-section__right-part{
+        line-height: 1.3rem;
+
+        padding-inline: 2rem;
+    }
+
+    /*BOTTOM SECTION*/
+
+    .bottom-section .container {
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+    }
+
+    .right-column {
+        max-width: 30%;
+        margin-right: auto;
+        margin-block: auto;
+    }
+
+    .left-column {
+        width: 60%;
+        margin-left: auto;
+    }
+
+    .left-column-img-container img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .right-column__top, 
+    .right-column__center, 
+    .right-column__bottom {
+        max-width: 80%;
+    }
+
+    /*FOOTER*/
+
+    .footer-bottom-section{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer .about{
+        max-width: 40%;
+
+        font-family: var(--oswald);
+    }
+
+    .footer-bottom-section__lists ul li{
+        text-align: left;
+
+        font-family: var(--oswald);
+    }
+
+    .footer-bottom-section .about h3,
+    .footer-bottom-section .about p{
+        text-align: left;
+    }
+    
 }
