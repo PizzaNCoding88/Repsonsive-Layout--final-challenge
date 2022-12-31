@@ -22,6 +22,14 @@ body{
     overflow-x: hidden;
 }
 
+.nav-up {
+    top: -69px;
+  }
+
+  .nav-up-menu-open {
+    top: -285px;
+  }
+
 .container {
     max-width: 1200px;
 }
@@ -33,6 +41,9 @@ header{
 
     width: 100%;
 
+    position: fixed;
+
+    z-index: 100;
 }
 
 nav, .container{
