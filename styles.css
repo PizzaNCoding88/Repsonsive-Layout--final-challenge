@@ -12,6 +12,12 @@
 
 .disp-none {
     display: none;
+
+}
+
+.disp {
+    display: block;
+    transition: all 200ms ease-in-out;
 }
 
 body{
@@ -23,7 +29,7 @@ body{
 }
 
 .nav-up {
-    top: -69px;
+    top: -75px;
     transition: 200ms ease-in-out;
   }
 
@@ -58,6 +64,7 @@ nav, .container{
 
     margin: 0 auto;
     padding: 1rem 0;
+
 }
 
 .burger-menu {
