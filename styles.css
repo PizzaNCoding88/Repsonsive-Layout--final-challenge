@@ -10,10 +10,6 @@
     --montserrat: 'Montserrat', sans-serif;
 }
 
-.disp-none {
-    display: none;
-
-}
 
 .disp {
     display: block;
@@ -31,11 +27,11 @@ body{
 .nav-up {
     top: -75px;
     transition: 200ms ease-in-out;
-  }
+}
 
-  .nav-up-menu-open {
+.nav-up-menu-open {
     top: -285px;
-  }
+}
 
 .container {
     max-width: 1200px;
@@ -45,6 +41,13 @@ a:hover {
     opacity: 0.7;
 }
 
+.disp-none {
+    /* display: none; */
+
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0;
+}
 /*NAVIGATION MENU*/
 
 header{
@@ -64,7 +67,6 @@ nav, .container{
 
     margin: 0 auto;
     padding: 1rem 0;
-
 }
 
 .burger-menu {
@@ -88,11 +90,15 @@ nav, .container{
     height: 100%;
 }
 
+
 .navigation {
     width: 80%;
 
     margin: 0 auto;
 
+    /*CHANGES*/
+
+    transition: 300ms ease-in-out;
 }
 
 .navigation-list {
@@ -349,6 +355,9 @@ footer h2{
         display: flex;
         justify-content: right;
         align-items: center;
+
+        visibility: visible;
+        opacity: 1;
     }
 
     .navigation-list {
@@ -413,6 +422,8 @@ footer h2{
         display: flex;
         justify-content: right;
         align-items: center;
+        visibility: visible;
+        opacity: 1;
     }
 
     .navigation-list {
