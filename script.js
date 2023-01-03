@@ -1,15 +1,4 @@
-//MOBILE MODE - OPEN NAVIGATION BAR
-
-const burgerMenu = document.querySelector(".burger-menu");
-const navigation = document.querySelector(".navigation");
-
-burgerMenu.addEventListener("click" , openMenu);
-
-function openMenu() {
-    navigation.classList.toggle("disp-none");
-}
-
-//HIDE NAVIGATION BAR
+//HIDE NAVIGATION BAR ON SCROLLING
 
 
 const nav = document.querySelector("header");
