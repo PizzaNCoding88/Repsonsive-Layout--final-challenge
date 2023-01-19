@@ -69,7 +69,7 @@ label input {
 label input:checked ~ .navigation {
     transform: translateY(0%);
     opacity: 1;
-    padding-top: 3rem;
+    padding-block: 3rem;
 }
 
 header:has(label input:checked){
