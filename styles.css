@@ -61,7 +61,7 @@ header{
 
     height: 4.5rem;
 
-    transition: 250ms ease-in-out ;
+    transition: 250ms ease-in-out;
 }
 
 /* NEW TEST */
@@ -83,16 +83,23 @@ header:has(label input:checked){
 
 /* NEW TEST */
 
-nav, .container{
-    width: 90%;
 
+nav, .container{
+    width: 80%;
+    
     margin: 0 auto;
     padding: 1rem 0;
+}
+
+nav{
+    width: 100%;
 }
 
 .burger-menu {
     height: 2rem;
     width: 2rem;
+
+    padding-left: 2rem;
 
     display: inline-block;
 }
@@ -105,7 +112,7 @@ nav, .container{
 .logo-link{
     position: relative;
 
-    left: calc(50% - 4rem);
+    left: calc(50% - 6rem);
     transform: translateX(-25%);
 
     height: 100%;
@@ -114,17 +121,15 @@ nav, .container{
 
 .navigation {
 
-    /* NEW CONTENT */
     transform: translateY(-100%);
     opacity: 0;
-    /* NEW CONTENT */
 
-    width: 80%;
 
-    margin: 0 auto;
+    width: 100%;
 
-    /*CHANGES*/
+    /* margin: 0 auto; */
 
+    background-color: var(--black);
     transition: 300ms ease-in-out;
 }
 
