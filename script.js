@@ -1,5 +1,5 @@
 //HIDE NAVIGATION BAR ON SCROLLING
-
+const navigation = document.querySelector(".navigation");
 
 const nav = document.querySelector("header");
 const navHeight = 69;
